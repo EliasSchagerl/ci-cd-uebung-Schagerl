@@ -1,3 +1,7 @@
+## Übung 1
+- Autor: Elias Schagerl
+- Besonderheit: Ich habe bereits grundlegende Erfahrung mit Git und GitHub, insbesondere mit dem Erstellen von Repositories, Branches und dem Mergen von Änderungen. Bisher nutze ich Git hauptsächlich zur Versionsverwaltung von Studienprojekten.
+
 # CI/CD Übung – Java Basisprojekt (Ü1 mit Anleitungen)
 
 Dieses Repository ist der Startpunkt für **Übung 1** und wird in **allen folgenden Übungen** weiterverwendet
