@@ -37,7 +37,9 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+
   <build>
+  
     <plugins>
       <!-- JUnit 5/Surefire -->
       <plugin>
