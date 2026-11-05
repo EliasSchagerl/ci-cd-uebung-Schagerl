@@ -1,3 +1,5 @@
+![CI Pipeline](https://github.com/EliasSchagerl/ci-cd-uebung-Schagerl/actions/workflows/ci.yml/badge.svg)
+
 ## Übung 1
 - Autor: Elias Schagerl
 - Besonderheit: Ich habe bereits grundlegende Erfahrung mit Git und GitHub, insbesondere mit dem Erstellen von Repositories, Branches und dem Mergen von Änderungen. Bisher nutze ich Git hauptsächlich zur Versionsverwaltung von Studienprojekten.
