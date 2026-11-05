@@ -1,4 +1,6 @@
-# UE02 — CI Pipeline with Matrix Builds, Coverage & SonarCloud (24 pts)
+# UE02 — CI Pipeline with Matrix Builds, Coverage & SonarQube Cloud (24 pts)
+
+> SonarCloud was renamed **SonarQube Cloud** (sonarcloud.io). Both names mean the same service; this text keeps "SonarCloud" for brevity.
 
 **Goal:** Extend your UE01 repository with a production-ready CI pipeline using GitHub Actions: 
 - build & test with Maven/Surefire
@@ -20,7 +22,7 @@
    - Notes on any problems and how you solved them.
 3. Updated **README.md** in the repo with a **build badge** pointing to your CI workflow.
 
-Submit your results to eLearning until **November, 6th 2025, 23:55**
+Submit your results to eLearning until **November 18th, 2026, 23:55**
 
 ---
 
@@ -42,6 +44,8 @@ Submit your results to eLearning until **November, 6th 2025, 23:55**
 
 ## Constraints & expectations
 - Use your existing UE01 repo and build system (Maven, JUnit 5).
+- Your UE01 repo contains one **intentionally failing test** (`TextUtilsTest.isPalindrome_caseInsensitive_expectedTrue`, caused by the `==` string comparison in `TextUtils.isPalindrome`). Your CI will be red until you fix this bug; the fix counts as one of the SonarCloud findings in task 6. Do not delete or disable the test.
+- Use current major versions of the actions: `actions/checkout@v7`, `actions/setup-java@v6`, `actions/upload-artifact@v7`. Older `@v4` versions still run but show Node.js deprecation warnings in every run.
 - Prefer Temurin JDK in GitHub Actions.
 - Use matrix builds wisely and exclude one variant (your choice); justify which and why in your PDF.
 - SonarCloud should analyze each commit to main (PR decoration is a plus, not required).
@@ -84,6 +88,7 @@ Workflow setup
 - SonarCloud: prefer the Maven scanner for Java projects. If CI scans are enabled, turn Automatic Analysis OFF in the project settings. Ensure SONAR_TOKEN is a repository secret.
 - Branch protection (optional but recommended): require your CI checks (and Quality Gate if used) before merging to main.
 - Windows vs. Ubuntu: watch for path separators and line endings; avoid OS-specific assumptions.
+- `ubuntu-latest` is moving from Ubuntu 24.04 to 26.04 during November 2026, so two runs may land on different images. Pin `ubuntu-24.04` if you want reproducible runs.
 - Flaky tests: stabilize or quarantine; don’t mask problems by skipping tests.
 - Documentation: in the PDF, include small, legible screenshots and one-sentence explanations—prioritize clarity over volume.
 
