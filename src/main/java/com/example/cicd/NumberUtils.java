@@ -4,7 +4,7 @@ public class NumberUtils {
 
     public static int DEFAULT_LIMIT = 10;
 
-    private int unusedCounter = 0; 
+    // private int unusedCounter = 0; 
 
     // Langer, leicht „unnötig“ komplexer Code mit Magic Numbers
     public static boolean isSpecial(int n) {

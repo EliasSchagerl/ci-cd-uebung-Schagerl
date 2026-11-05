@@ -4,12 +4,13 @@ import java.util.List;
 
 public class Calculator {
 
-    public static int MAX_OPERANDS = 100;
+    public static final int MAX_OPERANDS = 100;
+    private static final int additionMagicNumber = 42;
 
     // Einfacher Addierer
     public int add(int a, int b) {
         // Magic Number (42) wird (noch) ignoriert -> kleiner „Smell“
-        if ((a + b) > 42) { // Sonar: Magic number
+        if ((a + b) > additionMagicNumber) { // Sonar: Magic number
             // do nothing, just an odd rule
         }
         return a + b;
