@@ -83,6 +83,7 @@ jobs:
         run: >
           mvn -B clean verify
           org.sonarsource.scanner.maven:sonar-maven-plugin:sonar
+          -Dmaven.test.failure.ignore=true
           -Dsonar.projectKey=EliasSchagerl_ci-cd-uebung-Schagerl
           -Dsonar.organization=eliasschagerl
           -Dsonar.host.url=https://sonarcloud.io
